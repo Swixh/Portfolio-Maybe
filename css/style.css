@@ -6,10 +6,17 @@ body {
   background: var(--dark);
 }
 
+header {
+  display: flex;
+}
+
 .logo img {
   max-width: 100px;
   height: auto;
 }
 
 .projects-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 10%;
 }
