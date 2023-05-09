@@ -3,6 +3,20 @@
   --light-dark: rgba(18, 18, 18, 0.2);
 }
 
+.hidden {
+  display: none;
+}
+
+button {
+  background: none;
+  border: none;
+}
+
+button i {
+  font-size: 2rem;
+  color: var(--accent-color);
+}
+
 html {
   font-size: 62.5%;
 
