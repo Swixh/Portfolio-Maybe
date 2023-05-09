@@ -5,6 +5,35 @@
 
 html {
   font-size: 62.5%;
+
+  --hue: 0; /* Blue */
+  --accent-hue: 28; /* Orange */
+
+  --text-color-normal: hsl(var(--hue), 0%, 0%);
+  --text-color-light: hsl(var(--hue), 15%, 35%);
+  --text-color-richer: hsl(var(--hue), 50%, 72%);
+  --text-color-highlight: hsl(var(--accent-hue), 70%, 45%);
+  --link-color: hsl(var(--hue), 90%, 70%);
+
+  --accent-color: hsl(var(--accent-hue), 0%, 0%);
+  /* --error-color: rgb(240, 50, 50); */
+  --button-background: hsl(var(--hue), 63%, 43%);
+  --background: hsl(var(--hue), 0%, 100%);
+}
+
+html[data-theme='dark'] {
+  --hue: 210; /* Blue */
+  --accent-hue: 122; /* Orange */
+  --text-color-normal: hsl(var(--hue), 10%, 62%);
+  --text-color-light: hsl(var(--hue), 15%, 35%);
+  --text-color-richer: hsl(var(--hue), 50%, 72%);
+  --text-color-highlight: hsl(var(--accent-hue), 70%, 45%);
+  --link-color: hsl(var(--hue), 90%, 70%);
+  --accent-color: hsl(var(--accent-hue), 0%, 100%);
+  --error-color: rgb(240, 50, 50);
+  --button-background: hsl(var(--hue), 63%, 43%);
+  --button-text-color: black;
+  --background: hsl(var(--hue), 20%, 12%);
 }
 
 h1,
@@ -13,7 +42,7 @@ a,
 p,
 h3 {
   font-size: 1.6rem;
-  color: white;
+  color: var(--text-color-normal);
   text-decoration: none;
   list-style: none;
   padding: 5px;
@@ -21,7 +50,7 @@ h3 {
 }
 
 body {
-  background: var(--dark);
+  background: var(--background);
 }
 
 header {
@@ -33,6 +62,8 @@ header {
 .logo img {
   max-width: 100px;
   height: auto;
+  filter: invert(36%) sepia(76%) saturate(1400%) hue-rotate(151deg)
+    brightness(99%) contrast(97%);
 }
 
 main {
@@ -45,7 +76,7 @@ main {
   justify-content: flex-start;
   padding: 30px 10% 45px 2%;
   gap: 20px;
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid var(--accent-color);
 }
 
 h2 {
@@ -66,7 +97,7 @@ fa-github {
 }
 
 footer {
-  padding: 30px 5%;
+  padding: 30px 5% 50px;
 }
 
 footer h3 {
@@ -85,4 +116,5 @@ footer ul li {
 
 footer li i {
   margin-left: 20px;
+  color: var(--button-text-color);
 }
