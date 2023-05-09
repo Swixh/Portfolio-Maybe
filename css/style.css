@@ -2,12 +2,25 @@
   --dark: #000000;
 }
 
+html {
+  font-size: 62.5%;
+}
+
+h1,
+h2,
+a {
+  font-size: 1.6rem;
+  color: white;
+}
+
 body {
   background: var(--dark);
 }
 
 header {
   display: flex;
+  justify-content: space-between;
+  padding: 20px 5%;
 }
 
 .logo img {
