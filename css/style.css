@@ -5,3 +5,11 @@
 body {
   background: var(--dark);
 }
+
+.logo img {
+  max-width: 100px;
+  height: auto;
+}
+
+.projects-container {
+}
