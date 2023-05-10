@@ -30,6 +30,9 @@ html {
   /* --error-color: rgb(240, 50, 50); */
   --button-background: hsl(var(--hue), 40%, 50%);
   --background: hsl(var(--hue), 0%, 100%);
+  --logo: invert(0%) sepia(94%) saturate(18%) hue-rotate(356deg) brightness(98%)
+    contrast(100%);
+  --logo-background: black;
 }
 
 html[data-theme='dark'] {
@@ -45,6 +48,7 @@ html[data-theme='dark'] {
   --button-background: hsl(var(--hue), 20%, 43%);
   --button-text-color: black;
   --background: hsl(var(--hue), 20%, 12%);
+  --logo-background: none;
 }
 
 h1,
@@ -73,13 +77,15 @@ header {
 
 header div {
   display: flex;
+  align-items: center;
 }
 
 .logo img {
   max-width: 100px;
   height: auto;
-  filter: invert(36%) sepia(76%) saturate(1400%) hue-rotate(151deg)
-    brightness(99%) contrast(97%);
+  filter: var(--logo);
+  background: var(--logo-background);
+  padding: 10px;
 }
 
 main {
