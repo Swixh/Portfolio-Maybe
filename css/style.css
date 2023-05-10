@@ -28,7 +28,7 @@ html {
   --link-color: hsl(var(--hue), 90%, 70%);
   --accent-color: hsl(var(--accent-hue), 0%, 0%);
   /* --error-color: rgb(240, 50, 50); */
-  --button-background: hsl(var(--hue), 63%, 43%);
+  --button-background: hsl(var(--hue), 40%, 50%);
   --background: hsl(var(--hue), 0%, 100%);
 }
 
@@ -42,7 +42,7 @@ html[data-theme='dark'] {
   --link-color: hsl(var(--hue), 90%, 70%);
   --accent-color: hsl(var(--accent-hue), 0%, 100%);
   --error-color: rgb(240, 50, 50);
-  --button-background: hsl(var(--hue), 63%, 43%);
+  --button-background: hsl(var(--hue), 20%, 43%);
   --button-text-color: black;
   --background: hsl(var(--hue), 20%, 12%);
 }
@@ -51,7 +51,8 @@ h1,
 h2,
 a,
 p,
-h3 {
+h3,
+label {
   font-size: 1.6rem;
   color: var(--text-color-normal);
   text-decoration: none;
@@ -68,6 +69,10 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 20px 5%;
+}
+
+header div {
+  display: flex;
 }
 
 .logo img {
