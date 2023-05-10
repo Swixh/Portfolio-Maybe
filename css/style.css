@@ -19,16 +19,13 @@ button i {
 
 html {
   font-size: 62.5%;
-
   --hue: 0; /* Blue */
   --accent-hue: 28; /* Orange */
-
   --text-color-normal: hsl(var(--hue), 0%, 0%);
   --text-color-light: hsl(var(--hue), 15%, 35%);
   --text-color-richer: hsl(var(--hue), 50%, 72%);
   --text-color-highlight: hsl(var(--accent-hue), 70%, 45%);
   --link-color: hsl(var(--hue), 90%, 70%);
-
   --accent-color: hsl(var(--accent-hue), 0%, 0%);
   /* --error-color: rgb(240, 50, 50); */
   --button-background: hsl(var(--hue), 63%, 43%);
@@ -38,7 +35,7 @@ html {
 html[data-theme='dark'] {
   --hue: 210; /* Blue */
   --accent-hue: 122; /* Orange */
-  --text-color-normal: hsl(var(--hue), 10%, 62%);
+  --text-color-normal: hsl(var(--hue), 0%, 100%);
   --text-color-light: hsl(var(--hue), 15%, 35%);
   --text-color-richer: hsl(var(--hue), 50%, 72%);
   --text-color-highlight: hsl(var(--accent-hue), 70%, 45%);
@@ -93,6 +90,15 @@ main {
   border-bottom: 2px solid var(--accent-color);
 }
 
+section[class^='project-'] div {
+  width: 100px;
+  height: 100px;
+  background: var(--background);
+  left: 20px;
+  padding: 10px;
+  position: relative;
+}
+
 h2 {
   font-size: 2rem;
 }
@@ -130,5 +136,5 @@ footer ul li {
 
 footer li i {
   margin-left: 20px;
-  color: var(--button-text-color);
+  color: var(--text-color-light);
 }
