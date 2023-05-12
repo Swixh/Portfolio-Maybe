@@ -15,6 +15,7 @@ button {
 button i {
   font-size: 2rem;
   color: var(--accent-color);
+  cursor: pointer;
 }
 
 html {
