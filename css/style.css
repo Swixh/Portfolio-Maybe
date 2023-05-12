@@ -46,9 +46,12 @@ html[data-theme='dark'] {
   --accent-color: hsl(var(--accent-hue), 0%, 100%);
   --error-color: rgb(240, 50, 50);
   --button-background: hsl(var(--hue), 20%, 43%);
-  --button-text-color: black;
   --background: hsl(var(--hue), 20%, 12%);
   --logo-background: none;
+}
+
+input[type='submit'] {
+  color: white;
 }
 
 h1,
@@ -92,34 +95,40 @@ main {
   padding: 0 5%;
 }
 
-.projects-container {
+.cards-container {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  font-size: 1.6rem;
   padding: 30px 10% 45px 2%;
   gap: 20px;
   border-bottom: 2px solid var(--accent-color);
 }
 
-section[class^='project-'] div {
-  width: 100px;
-  height: 100px;
-  background: var(--background);
-  left: 20px;
-  padding: 10px;
-  position: relative;
-}
-
-h2 {
-  font-size: 2rem;
-}
-
-section[class^='project-'] {
+.cards {
   background: var(--light-dark);
 }
 
-section[class^='project-'] p {
-  padding: 10px;
+.cards div {
+  max-width: 100px;
+  min-width: 100%;
+  /* width: 100px; Temperory */
+  /* height: 100px; Temperory */
+  background: var(--background);
+  /* left: 20px; */
+  padding: 0.65em 0;
+  /* position: relative; */
+}
+
+.cards h2 {
+  font-size: 3rem;
+  padding: 0.5em;
+}
+
+.cards p {
+  word-spacing: 0.1em;
+  line-height: 2rem;
+  padding: 1em;
 }
 
 fa-twitter,
@@ -128,7 +137,7 @@ fa-github {
 }
 
 footer {
-  padding: 30px 5% 50px;
+  padding: 1.8em 5% 50px;
 }
 
 footer h3 {
