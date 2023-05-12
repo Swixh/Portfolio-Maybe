@@ -64,7 +64,7 @@ label {
   color: var(--text-color-normal);
   text-decoration: none;
   list-style: none;
-  padding: 5px;
+  padding: 0.5em;
   font-family: 'Source Sans Pro', sans-serif;
 }
 
@@ -75,7 +75,7 @@ body {
 header {
   display: flex;
   justify-content: space-between;
-  padding: 20px 5%;
+  padding: 1.25em 5%;
 }
 
 header div {
@@ -84,11 +84,11 @@ header div {
 }
 
 .logo img {
-  max-width: 100px;
+  max-width: 120px;
   height: auto;
   filter: var(--logo);
   background: var(--logo-background);
-  padding: 10px;
+  padding: 0.5em;
 }
 
 main {
@@ -98,9 +98,8 @@ main {
 .cards-container {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   font-size: 1.6rem;
-  padding: 30px 10% 45px 2%;
+  padding: 1.875em 10% 2.8125em 2%;
   gap: 20px;
   border-bottom: 2px solid var(--accent-color);
 }
